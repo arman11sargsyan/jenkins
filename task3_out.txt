@@ -1,1 +1,3 @@
-Thu 16 Dec 2021 11:28:28 AM UTC
+Hostname :   jenkinsserver
+IP :  127.0.1.1
+The Jenkins server date when have been pushed code 
