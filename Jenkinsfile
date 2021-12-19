@@ -27,4 +27,5 @@ pipeline {
                sh "cat task3_out.txt"
                 }
              }
+      }
 }
