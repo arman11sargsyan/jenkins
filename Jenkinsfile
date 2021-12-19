@@ -10,7 +10,8 @@ pipeline {
              stage('Check code from git') {
                 steps{  
              //git config
-             git 'https://github.com/arman11sargsyan/jenkins.git'
+             git branch: 'main',
+             url: 'https://github.com/arman11sargsyan/jenkins.git'
  
                 }
              }
