@@ -2,6 +2,11 @@ pipeline {
       agent { label 'agent'}
 
       stages {
+             stage('go to directory') {
+                steps{
+               sh "cd /home/agent/jenkins/jenkins"
+                }
+             }
              stage('Check code from git') {
                 steps{  
              //git config
@@ -12,7 +17,6 @@ pipeline {
              
              stage('build code') {
                 steps{
-               sh "cd /home/agent/jenkins/jenkins"
                sh "python3 task3.py > task3_out.txt"
                sh "cat date.txt >> task3_out.txt"
                 }
