@@ -1,10 +1,6 @@
 pipeline {
       agent { label 'agent'}
 
-      enviroment  {
-
-      }
-      
       stages {
              stage('Check code from git') {
                 steps{  
